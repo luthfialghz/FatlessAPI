@@ -20,7 +20,7 @@ def predict():
     event = request.json
     query_df = pd.DataFrame(event)
     prediction = model.predict(query_df)
-    return jsonify({"Prediction": list(prediction)})
+    return jsonify({"Prediction": (prediction)})
 
 
 if __name__ == '__main__':
